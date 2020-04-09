@@ -17,19 +17,19 @@ function dName(url){
     n = loseTheScheme.indexOf('.');
     loseTheRest = loseTheScheme.slice(0, n);
     return loseTheRest;
-}//end dName
+}//end dName()
 
-dName("http://github.com/carbonfive/raygun");// == "github" 
-dName("http://www.zombie-bites.com");// == "zombie-bites"
-dName("https://www.cnet.com");// == "cnet"
-dName("http://google.com");//'google'
-dName("http://google.co.jp");//'google'
-dName("https://123.net");//'123'
-dName("https://hyphen-site.org");//'hyphen-site'
-dName("http://codewars.com");//'codewars'
-dName("www.xakep.ru");//'xakep'
-dName("https://youtube.com");//'youtube'
-dName("http://www.codewars.com/kata/");//'codewars'
-dName("icann.org");//'icann'
-dName("http://p5hjcu2.jp");//'p5hjcu2
-dName("kj3olkw50skzp5.br/users");//
+console.log(dName("http://github.com/carbonfive/raygun"));// == "github" 
+console.log(dName("http://www.zombie-bites.com"));// == "zombie-bites"
+console.log(dName("https://www.cnet.com"));// == "cnet"
+console.log(dName("http://google.com"));//'google'
+console.log(dName("http://google.co.jp"));//'google'
+console.log(dName("https://123.net"));//'123'
+console.log(dName("https://hyphen-site.org"));//'hyphen-site'
+console.log(dName("http://codewars.com"));//'codewars'
+console.log(dName("www.xakep.ru"));//'xakep'
+console.log(dName("https://youtube.com"));//'youtube'
+console.log(dName("http://www.codewars.com/kata/"));//'codewars'
+console.log(dName("icann.org"));//'icann'
+console.log(dName("http://p5hjcu2.jp"));//'p5hjcu2
+console.log(dName("kj3olkw50skzp5.br/users"));//
